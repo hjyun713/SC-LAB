@@ -1,1 +1,6 @@
-# SC-LAB-1
+## EMG signal-based XR
+
+
+| XR | EMG Tool |
+| --- | --- |
+| 1 | 2 |
