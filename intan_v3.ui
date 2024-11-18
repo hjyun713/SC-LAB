@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>757</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Labeling Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../.designer/intanviewer/resource/icon.ico</normaloff>../../../.designer/intanviewer/resource/icon.ico</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_24">
+      <property name="minimumSize">
+       <size>
+        <width>982</width>
+        <height>740</height>
+       </size>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter_23">
+       <property name="minimumSize">
+        <size>
+         <width>691</width>
+         <height>741</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="minimumSize">
+         <size>
+          <width>701</width>
+          <height>331</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Cam View</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0" rowspan="2">
+          <widget class="QLabel" name="cam_label">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(170, 170, 170);
+border-style: solid;
+border-width: 1px;</string>
+           </property>
+           <property name="text">
+            <string>CAM</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSplitter" name="splitter_2">
+           <property name="minimumSize">
+            <size>
+             <width>271</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>271</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>56</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>56</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Cam List</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="cam_box">
+            <property name="minimumSize">
+             <size>
+              <width>182</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>182</width>
+              <height>23</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="refresh">
+            <property name="minimumSize">
+             <size>
+              <width>23</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>23</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>↺</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSplitter" name="splitter_17">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <widget class="QSplitter" name="splitter_10">
+            <property name="minimumSize">
+             <size>
+              <width>271</width>
+              <height>29</height>
+             </size>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QPushButton" name="cam_play">
+             <property name="minimumSize">
+              <size>
+               <width>133</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>133</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+             </property>
+             <property name="text">
+              <string>▶</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="cam_stop">
+             <property name="minimumSize">
+              <size>
+               <width>133</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>133</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+             </property>
+             <property name="text">
+              <string>∥</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="Line" name="line_6">
+            <property name="minimumSize">
+             <size>
+              <width>271</width>
+              <height>3</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>271</width>
+              <height>3</height>
+             </size>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="minimumSize">
+             <size>
+              <width>271</width>
+              <height>236</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>271</width>
+              <height>236</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Motion Labeling</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="label_0">
+               <property name="minimumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Labeling 0 (Shortcut : Alt+1) </string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Standing (Rest) : 0</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+1</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="label_1">
+               <property name="minimumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Labeling 1 (Shortcut : Alt+2) </string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Walking : 1</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+2</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="label_2">
+               <property name="minimumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Labeling 2 (Shortcut : Alt+3) </string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Up Stairway : 2</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+3</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QPushButton" name="label_3">
+               <property name="minimumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Labeling 3 (Shortcut : Alt+4) </string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Down Stairway : 3</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+4</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QPushButton" name="label_4">
+               <property name="minimumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Labeling 4 (Shortcut : Alt+5) </string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Running : 4</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+5</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QPushButton" name="label_5">
+               <property name="minimumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>251</width>
+                 <height>29</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Labeling 5 (Shortcut : Alt+6) </string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Others : 5</string>
+               </property>
+               <property name="shortcut">
+                <string>Alt+6</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QLabel" name="empty_label">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>701</width>
+          <height>361</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>EMG Signal View</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QSplitter" name="splitter_19">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="PlotWidget" name="plot">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-color: rgb(170, 170, 170);
+background-color: rgb(0, 0, 0);
+border-style: solid;
+border-width: 1px;</string>
+            </property>
+            <property name="interactive">
+             <bool>false</bool>
+            </property>
+            <property name="viewportUpdateMode">
+             <enum>QGraphicsView::MinimalViewportUpdate</enum>
+            </property>
+           </widget>
+           <widget class="QSplitter" name="splitter_16">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <widget class="QSplitter" name="splitter">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QLabel" name="emg_label">
+              <property name="minimumSize">
+               <size>
+                <width>133</width>
+                <height>19</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>133</width>
+                <height>19</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 75 bold 9pt &quot;Consolas&quot;;</string>
+              </property>
+              <property name="text">
+               <string>EMG sensor</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>133</width>
+                <height>19</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>133</width>
+                <height>19</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>192.168.0.8</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QSplitter" name="splitter_9">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QPushButton" name="connect">
+              <property name="minimumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Connet</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="reload">
+              <property name="minimumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Disconnect</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="Line" name="line_5">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>3</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>271</width>
+               <height>3</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QSplitter" name="splitter_3">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QSplitter" name="splitter_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QLabel" name="label_12">
+               <property name="minimumSize">
+                <size>
+                 <width>71</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>71</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>X scale -</string>
+               </property>
+              </widget>
+              <widget class="QSlider" name="x_all">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="minimum">
+                <number>50</number>
+               </property>
+               <property name="maximum">
+                <number>1000</number>
+               </property>
+               <property name="value">
+                <number>200</number>
+               </property>
+               <property name="sliderPosition">
+                <number>200</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QSpinBox" name="xt">
+              <property name="minimumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="minimum">
+               <number>50</number>
+              </property>
+              <property name="maximum">
+               <number>1000</number>
+              </property>
+              <property name="singleStep">
+               <number>5</number>
+              </property>
+              <property name="value">
+               <number>200</number>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QSplitter" name="splitter_8">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QSplitter" name="splitter_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QLabel" name="label_11">
+               <property name="minimumSize">
+                <size>
+                 <width>71</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>71</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Y scale -</string>
+               </property>
+              </widget>
+              <widget class="QSlider" name="y_all">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="minimum">
+                <number>50</number>
+               </property>
+               <property name="maximum">
+                <number>10000</number>
+               </property>
+               <property name="sliderPosition">
+                <number>7000</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QSpinBox" name="yt">
+              <property name="minimumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="minimum">
+               <number>50</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="singleStep">
+               <number>5</number>
+              </property>
+              <property name="value">
+               <number>7000</number>
+              </property>
+             </widget>
+            </widget>
+            <widget class="Line" name="line">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>3</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>271</width>
+               <height>3</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QSplitter" name="splitter_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QLabel" name="label_14">
+              <property name="minimumSize">
+               <size>
+                <width>71</width>
+                <height>21</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>71</width>
+                <height>21</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(220, 0, 0);
+font: bold 9pt &quot;Consolas&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Threshold1 -</string>
+              </property>
+             </widget>
+             <widget class="QSlider" name="t_s1">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="sliderPosition">
+               <number>7000</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+             <widget class="QDoubleSpinBox" name="t_v1">
+              <property name="minimumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="maximum">
+               <double>10000.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>7000.000000000000000</double>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QSplitter" name="splitter_13">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QLabel" name="label_15">
+              <property name="minimumSize">
+               <size>
+                <width>71</width>
+                <height>21</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>71</width>
+                <height>21</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 220);
+font: bold 9pt &quot;Consolas&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Threshold2 -</string>
+              </property>
+             </widget>
+             <widget class="QSlider" name="t_s2">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="sliderPosition">
+               <number>7000</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+             <widget class="QDoubleSpinBox" name="t_v2">
+              <property name="minimumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="maximum">
+               <double>10000.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>7000.000000000000000</double>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QSplitter" name="splitter_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QLabel" name="label_16">
+              <property name="minimumSize">
+               <size>
+                <width>71</width>
+                <height>21</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>71</width>
+                <height>21</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Ratio -</string>
+              </property>
+             </widget>
+             <widget class="QSlider" name="r_s">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="pageStep">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>4</number>
+              </property>
+              <property name="sliderPosition">
+               <number>4</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+             <widget class="QDoubleSpinBox" name="r_v">
+              <property name="minimumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>55</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="minimum">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>4.000000000000000</double>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QSplitter" name="splitter_12">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>29</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QPushButton" name="auto_xy">
+              <property name="minimumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Auto Scale</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="SetThres">
+              <property name="minimumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>133</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Auto Threshold</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="Line" name="line_2">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>3</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>271</width>
+               <height>3</height>
+              </size>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QGroupBox" name="filtergroup">
+             <property name="minimumSize">
+              <size>
+               <width>271</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>271</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Filter</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QRadioButton" name="F1">
+                <property name="text">
+                 <string>None</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QRadioButton" name="F2">
+                <property name="text">
+                 <string>Avg</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QRadioButton" name="F3">
+                <property name="text">
+                 <string>Savitzky</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QRadioButton" name="F4">
+                <property name="text">
+                 <string>Avg + Savitzky</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QLabel" name="empty_label_2">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_22">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QSplitter" name="splitter_14">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label_9">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Current Time</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="time_text">
+         <property name="minimumSize">
+          <size>
+           <width>175</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>175</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="line_7">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>3</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>3</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Save Cam Type</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="t_i">
+           <property name="text">
+            <string>Image</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="t_v_2">
+           <property name="text">
+            <string>Video</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QSplitter" name="splitter_11">
+        <property name="minimumSize">
+         <size>
+          <width>266</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label_8">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Record</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="rc1">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 bold 9pt &quot;Consolas&quot;;
+color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>■</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QSplitter" name="splitter_15">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QPushButton" name="Start">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Start</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="End">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>End</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="line_8">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>3</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>3</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter_21">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="emg_label_2">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Mac address</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="mac_address">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>5C:F2:86:41:9B:BF</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QSplitter" name="splitter_20">
+        <property name="minimumSize">
+         <size>
+          <width>266</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label_10">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Leg</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="leg_status">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>19</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 bold 9pt &quot;Consolas&quot;;
+color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>off</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QSplitter" name="splitter_18">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QPushButton" name="leg_con">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Connect</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="leg_dis">
+         <property name="minimumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>133</width>
+           <height>29</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Disconnect</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Leg Mode</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="leg_o">
+           <property name="text">
+            <string>Move</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="leg_x">
+           <property name="text">
+            <string>Rest</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="leg_test">
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>271</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: bold 9pt &quot;Consolas&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Move Leg (Test)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="empty_label_3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
